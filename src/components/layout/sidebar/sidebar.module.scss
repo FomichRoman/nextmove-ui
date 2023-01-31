@@ -1,0 +1,21 @@
+.wrapper {
+	@apply pt-2;
+	width: 18%;
+
+		.logo {
+			@apply text-2xl font-semibold;
+			color: #fefefe;
+
+			> img {
+				width: 100%;
+			}
+		}
+	
+	.sidebar {
+		@apply py-5 px-7;
+
+		.copy {
+			@apply text-gray-600 text-opacity-60 text-xs;
+		}
+	}
+}

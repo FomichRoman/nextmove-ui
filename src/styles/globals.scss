@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-redux-toastr/src/styles/index';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #1f1d2b;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.redux-toastr {
+  .toastr {
+    @apply shadow;
+    background-color: #272532;
+
+    &.rrt-success {
+      background-color: #56db8b;
+    }
+
+    &.rrt-warning {
+      background-color: #eaa84c;
+    }
+
+    &.rrt-info {
+      background-color: #4b85e7;
+    }
+
+    &.rrt-error {
+      background-color: #e94d4d;
+    }
+  }
+}

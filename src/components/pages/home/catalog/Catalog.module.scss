@@ -1,0 +1,19 @@
+.recommended {
+  > .top_block {
+    @apply flex items-center justify-between mb-6;
+
+    > .sort {
+      @apply text-white;
+    }
+  }
+
+  > .catalog {
+    @apply flex flex-wrap gap-6;
+
+    > div {
+      @apply mb-2.5;
+
+      width: 23.5%;
+    }
+  }
+}

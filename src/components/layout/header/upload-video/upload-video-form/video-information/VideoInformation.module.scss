@@ -1,0 +1,26 @@
+.info {
+
+  .thumbnail {
+    @apply flex items-center justify-center rounded-lg object-cover mb-8;
+    width: 344px;
+    height: 190px;
+    background-color: #353340;
+  }
+
+  > img {
+    @apply rounded-lg mb-8;
+  }
+
+  .datails {
+    @apply px-3;
+
+    > div {
+      @apply flex flex-col;
+
+      .desc {
+        @apply text-sm mb-1 font-medium;
+        color: #716c89;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.button {
+  @apply flex items-center justify-center rounded-lg p-2.5 text-white bg-primary bg-opacity-80 transition-colors duration-300;
+  
+  &.subscribed {
+    @apply bg-gray-500;
+  }
+
+  &:hover {
+    @apply bg-opacity-100;
+  }
+
+  > svg {
+    @apply mr-2 text-base;
+    flex-shrink: 0;
+  }
+}

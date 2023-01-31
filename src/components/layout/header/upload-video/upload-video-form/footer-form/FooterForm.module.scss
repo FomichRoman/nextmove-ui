@@ -1,0 +1,29 @@
+.footer {
+  @apply flex w-full items-end justify-between;
+
+  .status {
+    @apply flex items-center;
+
+    > svg {
+      @apply w-6 h-6 mr-2;
+    }
+
+    .upload-icon {
+      @apply fill-red-400 animate-pulse;
+    }
+
+    > span {
+      @apply text-sm font-medium;
+    }
+  }
+
+  .icons-uploaded {
+    .upload-icon {
+      @apply hidden;
+    }
+
+    .check-icon {
+      @apply fill-red-400;
+    }
+  }
+}

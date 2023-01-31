@@ -1,0 +1,7 @@
+  .right_block {
+    @apply flex flex-col justify-between w-5/12 pl-6 pt-3;
+
+    > button {
+      @apply self-start;
+    }
+  }
