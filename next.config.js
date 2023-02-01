@@ -7,7 +7,7 @@ const nextConfig = {
     APP_URL: process.env.REACT_APP_URL
   },
   images: {
-    domains: ['localhost'],
+    domains: ['194.67.87.12'],
     formats: ['image/avif', 'image/webp'],
   },
   // async rewrites() {
