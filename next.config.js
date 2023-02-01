@@ -10,18 +10,18 @@ const nextConfig = {
     domains: ['localhost'],
     formats: ['image/avif', 'image/webp'],
   },
-  async rewrites() {
-    return [
-      {
-        source: '/api/:path*',
-        destination: 'http://localhost:4200/api/:path*'
-      },
-      {
-        source: '/uploads/:path*',
-        destination: 'http://localhost:4200/uploads/:path*'
-      }
-    ]
-  }
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: '/api/:path*',
+  //       destination: 'http://localhost:4200/api/:path*'
+  //     },
+  //     {
+  //       source: '/uploads/:path*',
+  //       destination: 'http://localhost:4200/uploads/:path*'
+  //     }
+  //   ]
+  // }
 }
 
 module.exports = nextConfig
