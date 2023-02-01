@@ -2,7 +2,7 @@
 	@apply mt-0 mb-8;
 
 	> h3 {
-		@apply text-gray-600 mb-7;
+		@apply text-gray-600 mb-7 max-[1024px]:hidden;
 	}
 
 	> ul {
@@ -38,7 +38,7 @@
 				}
 
 				> b {
-					@apply font-normal;
+					@apply font-normal whitespace-nowrap max-[1024px]:hidden;
 				}
 
 				> span.number {

@@ -1,11 +1,19 @@
 .main {
-  @apply flex flex-wrap;
+	@apply flex flex-wrap;
 
-  .content {
-    width: 82%;
+	.content {
+		width: 82%;
 
-    .wrapper {
-      @apply pl-6 pr-8;
-    }
-  }
+		.wrapper {
+			@apply pl-6 pr-8;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.main {
+		.content {
+			width: 92%;
+		}
+	}
 }

@@ -1,20 +1,19 @@
 import { Header } from './header/Header'
 import s from './layout.module.scss'
-import Head from 'next/head'
 import { Sidebar } from './sidebar/Sidebar'
 import { ReactNode } from 'react'
+import Meta from '@/utils/meta/Meta'
 
 export interface ILayout {
 	title: string
+	description?: string
 	children: ReactNode
 }
 
-export const Layout = ({ title, children }: ILayout) => {
+export const Layout = ({ title, description, children }: ILayout) => {
 	return (
 		<>
-			<Head>
-				<title>{title}</title>
-			</Head>
+			<Meta title={title} description={description} />
 			<main className={s.main}>
         <Sidebar />
         <section className={s.content}>

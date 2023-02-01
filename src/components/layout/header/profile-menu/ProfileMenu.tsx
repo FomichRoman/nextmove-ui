@@ -24,8 +24,8 @@ export const ProfileMenu = () => {
 		<div ref={ref} className={s.wrapper}>
 			<button onClick={() => setIsShow(!isShow)}>
 				<Image
-					src={data?.avatarPath || ''}
-					alt={data?.name || 'dsfd'}
+					src={data?.avatarPath || '/deafult-avtar.jpg'}
+					alt={data?.name || ''}
 					width={40}
 					height={40}
 					priority

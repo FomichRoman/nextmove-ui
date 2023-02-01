@@ -6,7 +6,7 @@ import Catalog from './catalog/Catalog'
 
 export const Home: FC<IHome> = ({ randomVideo, topVideo, newVideos }) => {
 	return (
-		<Layout title={'Главная страница'}>
+		<Layout title={'Главная страница'} description={''}>
 			<Discover topVideo={topVideo} randomVideo={randomVideo} />
 			<Catalog newVideos={newVideos} />
 		</Layout>

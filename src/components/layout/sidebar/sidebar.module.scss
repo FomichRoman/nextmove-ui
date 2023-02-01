@@ -12,10 +12,28 @@
 		}
 	
 	.sidebar {
-		@apply py-5 px-7;
+		@apply py-5 px-7 max-[1024px]:px-5;
 
 		.copy {
-			@apply text-gray-600 text-opacity-60 text-xs;
+			@apply text-gray-600 text-opacity-60 text-xs max-[1024px]:hidden;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.wrapper {
+		width: 8%;
+
+		.logo {
+			padding-left: 3px;
+			display: inline-block;
+			width: 54px;
+			overflow: hidden;
+
+			> img {
+				max-width: none;
+				width: 250px;
+			}
 		}
 	}
 }
