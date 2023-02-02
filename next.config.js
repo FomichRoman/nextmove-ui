@@ -7,18 +7,18 @@ const nextConfig = {
     APP_URL: process.env.REACT_APP_URL
   },
   images: {
-    domains: ['194.67.87.12'],
+    domains: ['next-move.ru'],
     formats: ['image/avif', 'image/webp'],
   },
   async rewrites() {
     return [
       {
         source: '/api/:path*',
-        destination: 'https://194.67.87.12/api/:path*'
+        destination: 'https://next-move.ru/api/:path*'
       },
       {
         source: '/uploads/:path*',
-        destination: 'https://194.67.87.12/uploads/:path*'
+        destination: 'https://next-move.ru/uploads/:path*'
       }
     ]
   }
