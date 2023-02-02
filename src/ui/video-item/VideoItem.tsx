@@ -19,7 +19,7 @@ const VideoItem: FC<IVideoItem> = ({
 	const { push } = useRouter()
 
 	return (
-		<div
+		<Link href={`/v/${item.id}`}
 			className={cn(s.video_item, {
 				[s.small]: isSmall
 			})}
@@ -59,12 +59,12 @@ const VideoItem: FC<IVideoItem> = ({
 			</div>
 			<div className={s.information}>
 				{!isSmall && <div className={s.author}>{item.user?.name}</div>}
-				<Link href={`/v/${item.id}`} className={s.name}>
+				<span className={s.name}>
 					{item.name}
-				</Link>
+				</span>
         <VideoStatistics views={item.views} createdAt={!isSmall ? item.createdAt : undefined} />
 			</div>
-		</div>
+		</Link>
 	)
 }
 

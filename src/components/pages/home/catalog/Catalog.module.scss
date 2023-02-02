@@ -10,10 +10,36 @@
   > .catalog {
     @apply flex flex-wrap gap-6;
 
-    > div {
+    > a {
       @apply mb-2.5;
 
       width: 23.5%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .recommended {
+
+    > .catalog {
+      > a {
+        @apply mb-2.5;
+  
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .recommended {
+
+    > .catalog {
+      > a {
+        @apply mb-2.5;
+  
+        width: 45%;
+      }
     }
   }
 }

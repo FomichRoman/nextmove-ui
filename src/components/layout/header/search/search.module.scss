@@ -34,3 +34,17 @@
     width: 23%;
   }
 }
+
+@media (max-width: 768px) {
+	.result {
+		position: absolute;
+		top: 40px;
+		left: 0;
+		width: 169%;
+
+		> div {
+			@apply mr-4 last:mr-0;
+			width: 150px;
+		}
+	}
+}
