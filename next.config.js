@@ -14,11 +14,11 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://194.67.87.12/api/:path*'
+        destination: 'https://194.67.87.12/api/:path*'
       },
       {
         source: '/uploads/:path*',
-        destination: 'http://194.67.87.12/uploads/:path*'
+        destination: 'https://194.67.87.12/uploads/:path*'
       }
     ]
   }
