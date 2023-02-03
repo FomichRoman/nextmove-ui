@@ -30,7 +30,7 @@
 					background-color: #363440;
 
 					&.image {
-						@apply overflow-hidden p-0 shadow flex items-center justify-center;
+						@apply overflow-hidden p-0 shadow flex items-center justify-center flex-shrink-0;
 						margin-right: 1rem !important;
 						background: none;
 						border: 1px solid #363440;

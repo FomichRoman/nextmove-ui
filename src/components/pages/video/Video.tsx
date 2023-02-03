@@ -21,6 +21,8 @@ const Video: FC = () => {
 
   const [updateViews] = videoApi.useUpdateViewsMutation()
 
+  const width = document.documentElement.clientWidth
+
   useEffect(() => {
     if (query.id) updateViews(Number(query.id))
   }, [query.id])
@@ -28,12 +30,19 @@ const Video: FC = () => {
     <Layout title={video.name}>
       <div className={s.layout}>
         <VideoPlayer videoPath={video.videoPath} />
-        <Comments videoId={video.id} comments={video.comments || []} />
+        {width > 1024 && (
+          <Comments videoId={video.id} comments={video.comments || []} />
+        )}
       </div>
       <div className={cn(s.layout, 'mt-7')}>
         <VideoDetail video={video} channel={video.user || ({} as IUser)} />
-        <div></div>
+        {width > 1024 && (
+          <div></div>
+        )}
       </div>
+      {width < 1024 && (
+        <Comments videoId={video.id} comments={video.comments || []} />
+      )}
     </Layout>
   )
 }

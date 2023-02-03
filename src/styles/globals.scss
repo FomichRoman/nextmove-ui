@@ -4,11 +4,26 @@
 
 @import 'react-redux-toastr/src/styles/index';
 
-html,
+html, 
 body {
   padding: 0;
   margin: 0;
   background-color: #1f1d2b;
+  scrollbar-width: none;          /* "auto" или "thin"  */
+  scrollbar-color: #5b5b6b #1f1d2b;
+  scrollbar-gutter: stable;
+}
+
+html::-webkit-scrollbar {
+  width: 15px;               /* ширина scrollbar */
+}
+html::-webkit-scrollbar-track {
+  background: #1f1d2b;        /* цвет дорожки */
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #5b5b6b;    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+  border: 5px solid #1f1d2b;  /* padding вокруг плашки */
 }
 
 a {

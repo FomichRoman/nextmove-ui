@@ -1,11 +1,11 @@
 .layout {
-  @apply flex space-x-8;
+  @apply flex space-x-8 justify-center;
 
   > div:first-child {
-    @apply basis-4/5;
+    @apply basis-4/5 max-[768px]:basis-full;
   }
 
   > div:last-child {
-    @apply basis-1/3;
+    @apply basis-1/3 max-[1024px]:basis-4/5 max-[768px]:basis-full max-[768px]:items-start;
   }
 }

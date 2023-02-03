@@ -1,12 +1,12 @@
 .detail {
-  @apply flex space-x-6 items-center justify-between pb-10;
+  @apply flex space-x-6 items-center justify-between pb-10 max-[768px]:flex-col;
 
-  > div::first-child {
-    @apply basis-2/3;
+  > div:first-child {
+    @apply basis-2/3 max-[768px]:mb-10;
   }
 
   > div:last-child {
-    @apply basis-1/3;
+    @apply basis-1/3 max-[768px]:items-start;
   }
 
   h1 {
@@ -18,14 +18,16 @@
   }
 
   .wrapper_button {
-    @apply flex justify-between items-center mb-9;
+    @apply flex items-start mb-9 flex-wrap;
 
     > button:first-child {
-      width: 54%;
+      @apply mr-4 mb-4;
+      width: 190px;
+      white-space: nowrap;
     }
 
     > button:last-child {
-      width: 40%;
+      width: 140px;
     }
 
     > button {

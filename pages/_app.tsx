@@ -47,16 +47,16 @@ export default function App({ Component, pageProps }: TypeAppProps) {
 				<PersistGate persistor={persistor} loading={null}>
 					<main className={ubuntu.className}>
 						<AuthProvider Component={Component}>
-							<Component {...pageProps} />
-							<ReduxToastrLib
-								newestOnTop={false}
-								preventDuplicates
-								progressBar
-								closeOnToastrClick
-								timeOut={4000}
-								transitionIn='fadeIn'
-								transitionOut='fadeOut'
-							/>
+								<Component {...pageProps} />
+								<ReduxToastrLib
+									newestOnTop={false}
+									preventDuplicates
+									progressBar
+									closeOnToastrClick
+									timeOut={4000}
+									transitionIn='fadeIn'
+									transitionOut='fadeOut'
+								/>
 						</AuthProvider>
 					</main>
 				</PersistGate>

@@ -1,5 +1,5 @@
 .comments {
-  @apply rounded-xl p-5 relative;
+  @apply rounded-xl p-5 pb-20 relative max-[1024px]:mx-20 max-[768px]:m-5;
   background-color: #252836;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
 
